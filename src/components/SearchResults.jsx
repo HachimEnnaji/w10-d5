@@ -23,11 +23,9 @@ const SearchResaults = () => {
         if (response.ok) {
           let data = await response.json();
           setSongs(data);
-          console.log(data);
           dispatch({
             type: IS_LOADING,
           });
-          console.log(songs);
         } else {
           dispatch({
             type: IS_LOADING,

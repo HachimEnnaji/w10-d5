@@ -39,7 +39,6 @@ const Album = () => {
         let res = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${specific.album.id} `);
         if (res.ok) {
           let data = await res.json();
-          console.log(data);
           dispatch({
             type: ALL_TRACKS,
             payload: data,
@@ -135,6 +134,7 @@ const Album = () => {
                         <BiStar
                           style={{
                             fontSize: "1.2em",
+                            cursor: "pointer",
                             color: starStates[index] ? "gold" : "white",
                           }}
                           onClick={() => {

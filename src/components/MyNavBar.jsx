@@ -12,7 +12,6 @@ const MyNavBar = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     setSearch(e.target.value);
-    console.log(e.target.value);
   };
   return (
     <Navbar bg="navbar" variant="white" expand="md" fixed="left">
@@ -22,7 +21,7 @@ const MyNavBar = () => {
       <Navbar.Toggle aria-controls="navbarNavAltMarkup" />
       <Navbar.Collapse id="navbarNavAltMarkup" className="px-2">
         <Nav className="mr-auto d-block ">
-          <Nav.Link to={"/"}>
+          <Nav.Link href={"/"}>
             <FontAwesomeIcon icon={faHome} size="lg" /> Home
           </Nav.Link>
           <Nav.Link href="/MyFavourite">

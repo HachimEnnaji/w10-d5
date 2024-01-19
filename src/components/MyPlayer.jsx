@@ -9,7 +9,6 @@ import Next from "../assets/Next.png";
 
 const MyPlayer = () => {
   const tracklist = useSelector((state) => state?.songsData?.playAlbum);
-  console.log(tracklist);
   return (
     <Container fluid className="fixed-bottom bg-container pt-1 ">
       <Row>

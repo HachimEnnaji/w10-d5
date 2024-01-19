@@ -13,12 +13,9 @@ export const REMOVE_FROM_FAV = "REMOVE_FROM_FAV";
 export const fetchFromMusicApi = (endPoint) => {
   return async (dispatch, getState) => {
     try {
-      let res = await fetch(
-        "https://striveschool-api.herokuapp.com/api/deezer/search?q=" + endPoint
-      );
+      let res = await fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=" + endPoint);
       if (res.ok) {
         let data = await res.json();
-        console.log(data.data);
         switch (endPoint) {
           case "rock":
             dispatch({

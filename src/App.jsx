@@ -8,6 +8,7 @@ import Album from "./components/Album";
 import Artist from "./components/Artist";
 import SearchResaults from "./components/SearchResults";
 import MyFav from "./components/MyFav";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Artist" element={<Artist />} />
           <Route path="/SearchResults" element={<SearchResaults />} />
           <Route path="/MyFavourite" element={<MyFav />} />
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <MyPlayer />
       </BrowserRouter>
