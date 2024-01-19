@@ -268,3 +268,12 @@ div.delete svg:hover {
   transform: scale(1.3);
   transition: transform 250ms;
 }
+.custom-link {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+.custom-link:hover {
+  text-decoration: underline;
+}
