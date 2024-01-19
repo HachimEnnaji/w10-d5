@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { Container, Col, Row, Button } from "react-bootstrap";
+import { Container, Col, Row, Button, NavLink } from "react-bootstrap";
 import { ALL_TRACKS, HAS_ERROR, IS_LOADING, MY_FAV_SONGS, PLAY_ALBUM } from "../redux/actions";
 import { useEffect } from "react";
 import Loading from "./Loading";
@@ -104,10 +104,8 @@ const Album = () => {
                     alt={specific?.album?.title_short}
                   />
                   <p className=" mt-3">{specific?.album?.title}</p>
-                  <Link to={"/Artist"}>
-                    <p className=" " style={{ top: "20px" }}>
-                      {specific?.artist?.name}
-                    </p>
+                  <Link to={"/Artist"} className=" custom-link">
+                    <p style={{ top: "20px" }}>{specific?.artist?.name}</p>
                   </Link>
                   <Button
                     style={{

@@ -275,5 +275,6 @@ div.delete svg:hover {
   text-transform: uppercase;
 }
 .custom-link:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
+  color: #ccceee !important;
 }

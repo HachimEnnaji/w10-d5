@@ -99,11 +99,11 @@ const Artist = () => {
             ) : (
               songs?.data?.map((singl) => (
                 <Col xs={4} md={4} key={singl.id} className="my-3">
-                  <Link to={"/Album"}>
+                  <Link to={"/Album"} className="custom-link">
                     <img src={singl.album.cover_big} alt={singl.album.title} />
                     <p className="mt-2 text-truncate ">Album: {singl.album.title}</p>
                   </Link>
-                  <Link to={"/Artist"}>
+                  <Link to={"/Artist"} className="custom-link">
                     <p>Artist: {singl.artist.name}</p>
                   </Link>
                 </Col>
